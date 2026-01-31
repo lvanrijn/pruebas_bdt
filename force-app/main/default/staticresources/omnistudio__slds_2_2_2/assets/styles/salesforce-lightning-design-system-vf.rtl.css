@@ -1,0 +1,1896 @@
+/*! Lightning Design System 2.2.2 */
+/*!
+ * Copyright (c) 2015, salesforce.com, inc. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+ * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+ * Neither the name of salesforce.com, inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+@import url('./slds-fonts.css');
+
+.via-slds {
+  /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+  /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */ }
+
+.via-slds {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  margin: 0; }
+
+.via-slds article,
+.via-slds aside,
+.via-slds details,
+.via-slds figcaption,
+.via-slds figure,
+.via-slds footer,
+.via-slds header,
+.via-slds hgroup,
+.via-slds main,
+.via-slds menu,
+.via-slds nav,
+.via-slds section,
+.via-slds summary {
+  display: block; }
+
+.via-slds audio,
+.via-slds canvas,
+.via-slds progress,
+.via-slds video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+.via-slds audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+.via-slds [hidden],
+.via-slds template {
+  display: none; }
+
+.via-slds a {
+  background-color: transparent; }
+
+.via-slds a:active,
+.via-slds a:hover {
+  outline: 0; }
+
+.via-slds abbr[title] {
+  border-bottom: 1px dotted; }
+
+.via-slds b,
+.via-slds strong {
+  font-weight: bold; }
+
+.via-slds dfn {
+  font-style: italic; }
+
+.via-slds mark {
+  background: #ff0;
+  color: #000; }
+
+.via-slds small {
+  font-size: 80%; }
+
+.via-slds sub,
+.via-slds sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+.via-slds sup {
+  top: -0.5em; }
+
+.via-slds sub {
+  bottom: -0.25em; }
+
+.via-slds img {
+  border: 0; }
+
+.via-slds svg:not(:root) {
+  overflow: hidden; }
+
+.via-slds figure {
+  margin: 1em 40px; }
+
+.via-slds hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+.via-slds pre {
+  overflow: auto; }
+
+.via-slds code,
+.via-slds kbd,
+.via-slds pre,
+.via-slds samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+.via-slds button,
+.via-slds input,
+.via-slds optgroup,
+.via-slds select,
+.via-slds textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+.via-slds button {
+  overflow: visible; }
+
+.via-slds button,
+.via-slds select {
+  text-transform: none; }
+
+.via-slds button,
+.via-slds input[type="button"],
+.via-slds input[type="reset"],
+.via-slds input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+.via-slds button[disabled],
+.via-slds input[disabled] {
+  cursor: default; }
+
+.via-slds button::-moz-focus-inner,
+.via-slds input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.via-slds input {
+  line-height: normal; }
+
+.via-slds input[type="checkbox"],
+.via-slds input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+.via-slds input[type="number"]::-webkit-inner-spin-button,
+.via-slds input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+.via-slds input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+.via-slds input[type="search"]::-webkit-search-cancel-button,
+.via-slds input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+.via-slds fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+.via-slds legend {
+  border: 0;
+  padding: 0; }
+
+.via-slds textarea {
+  overflow: auto; }
+
+.via-slds optgroup {
+  font-weight: bold; }
+
+.via-slds table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.via-slds td,
+.via-slds th {
+  padding: 0; }
+
+.via-slds *,
+.via-slds *:before,
+.via-slds *:after {
+  box-sizing: border-box; }
+
+.via-slds ::-webkit-input-placeholder {
+  color: #54698d;
+  font-weight: 400;
+  font-size: 0.8125rem; }
+
+.via-slds :-ms-input-placeholder {
+  color: #54698d;
+  font-weight: 400;
+  font-size: 0.8125rem; }
+
+.via-slds ::placeholder {
+  color: #54698d;
+  font-weight: 400;
+  font-size: 0.8125rem; }
+
+.via-slds ::-moz-selection {
+  background: #d8edff;
+  text-shadow: none;
+  color: #16325c; }
+
+.via-slds ::selection {
+  background: #d8edff;
+  text-shadow: none;
+  color: #16325c; }
+
+.via-slds {
+  font-family: "Salesforce Sans", Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  background: white;
+  color: #16325c;
+  -webkit-tap-highlight-color: transparent; }
+
+.via-slds:not(html), .via-slds body {
+  font-size: 0.8125rem;
+  background: transparent; }
+
+.via-slds h1,
+.via-slds h2,
+.via-slds h3,
+.via-slds h4,
+.via-slds h5,
+.via-slds h6,
+.via-slds p,
+.via-slds ol,
+.via-slds ul,
+.via-slds dl,
+.via-slds fieldset {
+  margin: 0;
+  padding: 0; }
+
+.via-slds dd,
+.via-slds figure {
+  margin: 0; }
+
+.via-slds abbr[title],
+.via-slds fieldset,
+.via-slds hr {
+  border: 0; }
+
+.via-slds hr {
+  padding: 0; }
+
+.via-slds h1,
+.via-slds h2,
+.via-slds h3,
+.via-slds h4,
+.via-slds h5,
+.via-slds h6 {
+  font-weight: inherit;
+  font-size: 1em; }
+
+.via-slds ol,
+.via-slds ul {
+  list-style: none; }
+
+.via-slds a {
+  color: #0070d2;
+  text-decoration: none;
+  transition: color 0.1s linear; }
+
+.via-slds a:hover, .via-slds a:focus {
+  text-decoration: underline;
+  color: #005fb2; }
+
+.via-slds a:active {
+  color: #00396b; }
+
+.via-slds a,
+.via-slds button {
+  cursor: pointer; }
+
+.via-slds b,
+.via-slds strong,
+.via-slds dfn {
+  font-weight: 700; }
+
+.via-slds mark {
+  background-color: #fff03f;
+  color: #16325c; }
+
+.via-slds abbr[title] {
+  cursor: help; }
+
+.via-slds input[type=search] {
+  box-sizing: border-box; }
+
+.via-slds table {
+  width: 100%; }
+
+.via-slds caption,
+.via-slds th,
+.via-slds td {
+  text-align: right; }
+
+.via-slds hr {
+  display: block;
+  margin: 2rem 0;
+  border-top: 1px solid #d8dde6;
+  height: 1px;
+  clear: both; }
+
+.via-slds audio,
+.via-slds canvas,
+.via-slds iframe,
+.via-slds img,
+.via-slds svg,
+.via-slds video {
+  vertical-align: middle; }
+
+.via-slds img {
+  max-width: 100%;
+  height: auto; }
+
+.via-slds body {
+  padding: 0;
+  margin: 0; }
+
+.via-slds h1,
+.via-slds h2,
+.via-slds h3,
+.via-slds h4,
+.via-slds h5,
+.via-slds h6,
+.via-slds th,
+.via-slds td {
+  font-family: "Salesforce Sans", Arial, sans-serif; }
+
+.via-slds h1,
+.via-slds h2,
+.via-slds h3,
+.via-slds h4,
+.via-slds h5,
+.via-slds h6 {
+  display: inherit; }
+
+.via-slds li {
+  margin-right: 0; }
+
+.via-slds fieldset legend {
+  font-weight: normal; }
+
+.via-slds .slds-modal--form .slds-modal__header,
+.via-slds .slds-modal--form .slds-modal__content:last-child {
+  border-radius: 0;
+  box-shadow: none; }
+
+.via-slds .slds-modal--form .slds-modal__container {
+  margin: 0;
+  padding: 0; }
+
+.via-slds .slds-modal--form .slds-modal__header .slds-text-heading--medium {
+  line-height: 1.5; }
+
+.via-slds .slds-modal--form .slds-modal__header .slds-button {
+  display: inline-block;
+  width: auto; }
+
+.via-slds .slds-modal--form .slds-modal__header .slds-button:first-child {
+  float: right;
+  margin-left: 0.5rem; }
+
+.via-slds .slds-modal--form .slds-modal__header .slds-button:first-child + .slds-button {
+  float: left;
+  margin-top: 0;
+  margin-right: 0.5rem; }
+
+.via-slds .slds-action-overflow--touch {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9001; }
+
+.via-slds .slds-action-overflow--touch__container {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  height: 100%; }
+
+.via-slds .slds-action-overflow--touch__content {
+  padding-top: 33.33333333333333%;
+  overflow: hidden;
+  overflow-y: auto; }
+
+.via-slds .slds-action-overflow--touch__body {
+  position: relative;
+  top: 2rem;
+  background: white;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.07); }
+
+.via-slds .slds-action-overflow--touch__footer {
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-top: 1px solid #d8dde6;
+  padding: 0.75rem 1rem;
+  background-color: #f4f6f9;
+  box-shadow: 0 -2px 4px #F4F6F9; }
+
+.via-slds .slds-media--timeline {
+  padding-bottom: 1.5rem;
+  position: relative; }
+
+.via-slds .slds-media--timeline:before {
+  content: '';
+  background: #d8dde6;
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  right: 0.75rem;
+  top: 0;
+  bottom: 0;
+  margin-right: -1px;
+  z-index: -1; }
+
+.via-slds .slds-media--timeline:before {
+  margin-right: 1px; }
+
+.via-slds .slds-timeline__title {
+  position: relative; }
+
+.via-slds .slds-timeline__title-content {
+  position: relative;
+  top: -1px;
+  padding-left: 1rem;
+  background: white;
+  z-index: 2; }
+
+.via-slds .slds-timeline__title:after {
+  position: absolute;
+  left: 0;
+  bottom: 0.5rem;
+  right: 0;
+  border-bottom: 1px dashed #d8dde6;
+  content: ' ';
+  z-index: 1; }
+
+.via-slds .slds-timeline__icon {
+  margin-top: -0.75rem;
+  border: 2px solid #fff;
+  border-top-width: 0.75rem;
+  border-bottom-width: 0.75rem; }
+
+.via-slds .slds-timeline__actions {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-align: end;
+      align-items: flex-end; }
+
+.via-slds .slds-timeline__date {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  color: #54698d; }
+
+.via-slds .slds-timeline__media--call:before {
+  background: #48c3cc; }
+
+.via-slds .slds-timeline__media--email:before {
+  background: #95aec5; }
+
+.via-slds .slds-timeline__media--event:before {
+  background: #eb7092; }
+
+.via-slds .slds-timeline__media--task:before {
+  background: #4bc076; }
+
+.via-slds .slds-badge {
+  background-color: #e0e5ee;
+  padding: 0.25rem 0.5rem;
+  border-radius: 15rem;
+  font-size: 0.625rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+  color: #16325c;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+.via-slds .slds-badge + .slds-badge {
+  margin-right: 0.5rem; }
+
+.via-slds .slds-badge:empty {
+  padding: 0; }
+
+.via-slds .slds-breadcrumb .slds-list__item, .via-slds .slds-breadcrumb__item {
+  position: relative; }
+
+.via-slds .slds-breadcrumb .slds-list__item:before, .via-slds .slds-breadcrumb__item:before {
+  content: '\003E';
+  position: absolute;
+  right: -0.25rem; }
+
+.via-slds .slds-breadcrumb .slds-list__item > a, .via-slds .slds-breadcrumb__item > a {
+  display: block;
+  padding: 0 0.5rem; }
+
+.via-slds .slds-breadcrumb .slds-list__item > a:hover, .via-slds .slds-breadcrumb__item > a:hover {
+  text-decoration: none; }
+
+.via-slds .slds-breadcrumb .slds-list__item:first-child > a, .via-slds .slds-breadcrumb__item:first-child > a {
+  padding-right: 0; }
+
+.via-slds .slds-breadcrumb .slds-list__item:first-child:before, .via-slds .slds-breadcrumb__item:first-child:before {
+  content: ''; }
+
+.via-slds .slds-button-group,
+.via-slds .slds-button-group-list {
+  display: -ms-flexbox;
+  display: flex; }
+
+.via-slds .slds-button-group .slds-button,
+.via-slds .slds-button-group-list .slds-button {
+  border-radius: 0; }
+
+.via-slds .slds-button-group .slds-button:focus,
+.via-slds .slds-button-group-list .slds-button:focus {
+  z-index: 1; }
+
+.via-slds .slds-button-group .slds-button + .slds-button,
+.via-slds .slds-button-group .slds-button + .slds-button--last .slds-button,
+.via-slds .slds-button-group-list li + li .slds-button {
+  margin-right: -1px; }
+
+.via-slds .slds-button-group-list li:first-child .slds-button,
+.via-slds .slds-button-group .slds-button:first-child {
+  border-radius: 0 0.25rem 0.25rem 0; }
+
+.via-slds .slds-button-group .slds-button:last-child,
+.via-slds .slds-button-group-list li:last-child .slds-button,
+.via-slds .slds-button-group .slds-button--last .slds-button,
+.via-slds .slds-button-group .slds-button.slds-button--last,
+.via-slds .slds-button-group .slds-button--last .slds-button:only-child,
+.via-slds .slds-button-group .slds-button.slds-button--last {
+  border-radius: 0.25rem 0 0 0.25rem; }
+
+.via-slds .slds-button-group .slds-button:only-child,
+.via-slds .slds-button-group-list li:only-child .slds-button {
+  border-radius: 0.25rem; }
+
+.via-slds .slds-button-group + .slds-button-group,
+.via-slds .slds-button-group + .slds-button-group-list,
+.via-slds .slds-button-group + .slds-button,
+.via-slds .slds-button-group-list + .slds-button-group-list,
+.via-slds .slds-button-group-list + .slds-button-group,
+.via-slds .slds-button-group-list + .slds-button {
+  margin-right: 0.25rem; }
+
+.via-slds .slds-button {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  background: transparent;
+  background-clip: border-box;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1.875rem;
+  text-decoration: none;
+  color: #0070d2;
+  -webkit-appearance: none;
+  white-space: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: color 0.05s linear, background-color 0.05s linear; }
+
+.via-slds .slds-button:hover, .via-slds .slds-button:focus, .via-slds .slds-button:active, .via-slds .slds-button:visited {
+  text-decoration: none; }
+
+.via-slds .slds-button:hover, .via-slds .slds-button:focus {
+  color: #005fb2; }
+
+.via-slds .slds-button:focus {
+  outline: 0;
+  box-shadow: 0 0 3px #0070D2; }
+
+.via-slds .slds-button:active {
+  color: #00396b; }
+
+.via-slds .slds-button[disabled] {
+  color: #d8dde6; }
+
+.via-slds .slds-button:hover .slds-button__icon, .via-slds .slds-button:focus .slds-button__icon, .via-slds .slds-button:active .slds-button__icon, .via-slds .slds-button[disabled] .slds-button__icon {
+  fill: currentColor; }
+
+.via-slds .slds-button + .slds-button-group,
+.via-slds .slds-button + .slds-button-group-list {
+  margin-right: 0.25rem; }
+
+.via-slds .slds-button + .slds-button {
+  margin-right: 0.25rem; }
+
+.via-slds .slds-button-space-left {
+  margin-right: 0.25rem; }
+
+.via-slds a.slds-button {
+  text-align: center; }
+
+.via-slds a.slds-button:focus {
+  outline: 0;
+  box-shadow: 0 0 3px #0070D2; }
+
+.via-slds .slds-button__icon--left {
+  margin-left: 0.5rem; }
+
+.via-slds .slds-button__icon--right {
+  margin-right: 0.5rem; }
+
+.via-slds .slds-button--reset {
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+  background: transparent;
+  border: 0;
+  text-align: inherit; }
+
+.via-slds .slds-button--small {
+  line-height: 1.75rem;
+  min-height: 2rem; }
+
+.via-slds .slds-button--neutral {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #d8dde6;
+  background-color: white; }
+
+.via-slds .slds-button--neutral:hover, .via-slds .slds-button--neutral:focus {
+  background-color: #f4f6f9; }
+
+.via-slds .slds-button--neutral:active {
+  background-color: #eef1f6; }
+
+.via-slds .slds-button--neutral[disabled] {
+  background-color: white;
+  cursor: default; }
+
+.via-slds .slds-button--hint {
+  color: #9faab5; }
+
+.via-slds .slds-button--hint:hover, .via-slds .slds-button--hint:focus, .via-slds .slds-button--hint:active {
+  color: #0070d2; }
+
+.via-slds .slds-hint-parent:hover .slds-button--hint, .via-slds .slds-hint-parent:focus .slds-button--hint {
+  color: #0070d2; }
+
+.via-slds .slds-button--brand {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #0070d2;
+  border: 1px solid #0070d2;
+  color: white; }
+
+.via-slds .slds-button--brand:link, .via-slds .slds-button--brand:visited, .via-slds .slds-button--brand:active {
+  color: white; }
+
+.via-slds .slds-button--brand:hover, .via-slds .slds-button--brand:focus {
+  background-color: #005fb2;
+  color: white; }
+
+.via-slds .slds-button--brand:active {
+  background-color: #00396b; }
+
+.via-slds .slds-button--brand[disabled] {
+  background: #e0e5ee;
+  border-color: transparent;
+  color: white; }
+
+.via-slds .slds-button--inverse {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #d8dde6;
+  background-color: transparent; }
+
+.via-slds .slds-button--inverse:hover, .via-slds .slds-button--inverse:focus {
+  background-color: #f4f6f9; }
+
+.via-slds .slds-button--inverse:active {
+  background-color: #eef1f6; }
+
+.via-slds .slds-button--inverse[disabled] {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.15); }
+
+.via-slds .slds-button--inverse, .via-slds .slds-button--inverse:link, .via-slds .slds-button--inverse:visited,
+.via-slds .slds-button-group .slds-button--icon-inverse,
+.via-slds .slds-button-group .slds-button--icon-inverse:link,
+.via-slds .slds-button-group .slds-button--icon-inverse:visited {
+  color: #e0e5ee; }
+
+.via-slds .slds-button--inverse:hover, .via-slds .slds-button--inverse:focus, .via-slds .slds-button--inverse:active,
+.via-slds .slds-button-group .slds-button--icon-inverse:hover,
+.via-slds .slds-button-group .slds-button--icon-inverse:focus,
+.via-slds .slds-button-group .slds-button--icon-inverse:active {
+  color: #0070d2; }
+
+.via-slds .slds-button--inverse:focus,
+.via-slds .slds-button-group .slds-button--icon-inverse:focus {
+  outline: none;
+  box-shadow: 0 0 3px #E0E5EE; }
+
+.via-slds .slds-button--inverse[disabled],
+.via-slds .slds-button-group .slds-button--icon-inverse[disabled] {
+  color: rgba(255, 255, 255, 0.15); }
+
+.via-slds a.slds-button--inverse:focus {
+  outline: none;
+  box-shadow: 0 0 3px #E0E5EE; }
+
+.via-slds .slds-button--destructive {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #c23934;
+  border: 1px solid #c23934;
+  color: white; }
+
+.via-slds .slds-button--destructive:link, .via-slds .slds-button--destructive:visited, .via-slds .slds-button--destructive:active {
+  color: white; }
+
+.via-slds .slds-button--destructive:hover, .via-slds .slds-button--destructive:focus {
+  background-color: #a61a14;
+  color: white; }
+
+.via-slds .slds-button--destructive:active {
+  background-color: #870500;
+  border-color: #870500; }
+
+.via-slds .slds-button--destructive[disabled] {
+  background: #e0e5ee;
+  border-color: transparent;
+  color: white; }
+
+.via-slds .slds-button--success {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #4bca81;
+  border: 1px solid #4bca81;
+  color: white; }
+
+.via-slds .slds-button--success:link, .via-slds .slds-button--success:visited, .via-slds .slds-button--success:active {
+  color: white; }
+
+.via-slds .slds-button--success:hover, .via-slds .slds-button--success:focus {
+  background-color: #04844b;
+  color: white; }
+
+.via-slds .slds-button--success:active {
+  background-color: #04844b;
+  border-color: #04844b; }
+
+.via-slds .slds-button--neutral.slds-is-selected {
+  border-color: transparent;
+  background-color: transparent; }
+
+.via-slds .slds-button--neutral.slds-is-selected:hover:not([disabled]), .via-slds .slds-button--neutral.slds-is-selected:focus:not([disabled]) {
+  border: 1px solid #d8dde6;
+  background-color: #f4f6f9; }
+
+.via-slds .slds-button--neutral.slds-is-selected:active {
+  background-color: #eef1f6; }
+
+.via-slds .slds-button__icon--stateful {
+  width: 0.75rem;
+  height: 0.75rem;
+  fill: currentColor; }
+
+.via-slds .slds-button--inverse.slds-is-selected {
+  border-color: transparent; }
+
+.via-slds .slds-text-not-selected,
+.via-slds .slds-text-selected,
+.via-slds .slds-text-selected-focus,
+.via-slds .slds-is-selected[disabled]:hover .slds-text-selected,
+.via-slds .slds-is-selected[disabled]:focus .slds-text-selected {
+  display: block; }
+
+.via-slds .slds-not-selected .slds-text-selected,
+.via-slds .slds-not-selected .slds-text-selected-focus,
+.via-slds .slds-is-selected .slds-text-not-selected,
+.via-slds .slds-is-selected:not(:hover):not(:focus) .slds-text-selected-focus,
+.via-slds .slds-is-selected[disabled]:hover .slds-text-selected-focus,
+.via-slds .slds-is-selected:hover .slds-text-selected,
+.via-slds .slds-is-selected:focus .slds-text-selected {
+  display: none; }
+
+.via-slds .slds-button--icon,
+.via-slds .slds-button--icon-inverse,
+.via-slds .slds-button--icon-container,
+.via-slds .slds-button--icon-border,
+.via-slds .slds-button--icon-border-filled,
+.via-slds .slds-button--icon-border-inverse,
+.via-slds .slds-button--icon-more,
+.via-slds .slds-button--icon-error {
+  line-height: 1;
+  vertical-align: middle;
+  color: #54698d; }
+
+.via-slds .slds-button--icon-bare {
+  line-height: 1;
+  vertical-align: middle;
+  color: #54698d; }
+
+.via-slds .slds-button--icon-border[disabled]:hover, .via-slds .slds-button--icon-border[disabled]:focus {
+  background-color: transparent; }
+
+.via-slds .slds-button--icon-border-filled,
+.via-slds .slds-button--icon-border {
+  border: 1px solid #d8dde6; }
+
+.via-slds .slds-button--icon-border-filled:hover, .via-slds .slds-button--icon-border-filled:focus,
+.via-slds .slds-button--icon-border:hover,
+.via-slds .slds-button--icon-border:focus {
+  background-color: #f4f6f9; }
+
+.via-slds .slds-button--icon-border-filled:active,
+.via-slds .slds-button--icon-border:active {
+  background-color: #eef1f6; }
+
+.via-slds .slds-button--icon-border-inverse {
+  border: 1px solid #d8dde6; }
+
+.via-slds .slds-button--icon-container,
+.via-slds .slds-button--icon-border,
+.via-slds .slds-button--icon-border-filled,
+.via-slds .slds-button--icon-border-inverse {
+  width: 2rem;
+  height: 2rem; }
+
+.via-slds .slds-button--icon-border-filled {
+  background-color: white; }
+
+.via-slds .slds-button--icon-border-filled[disabled] {
+  border: 1px solid #d8dde6;
+  background-color: white; }
+
+.via-slds .slds-button--icon-more {
+  line-height: 1.875rem;
+  padding: 0 0.5rem;
+  vertical-align: middle;
+  border: 1px solid #d8dde6; }
+
+.via-slds .slds-button--icon-more-filled {
+  background-color: white; }
+
+.via-slds .slds-button--icon-more:hover, .via-slds .slds-button--icon-more:focus {
+  border: 1px solid #d8dde6; }
+
+.via-slds .slds-button--icon-more:hover:hover, .via-slds .slds-button--icon-more:hover:focus, .via-slds .slds-button--icon-more:focus:hover, .via-slds .slds-button--icon-more:focus:focus {
+  background-color: #f4f6f9; }
+
+.via-slds .slds-button--icon-more:hover:active, .via-slds .slds-button--icon-more:focus:active {
+  background-color: #eef1f6; }
+
+.via-slds .slds-button--icon-more:hover .slds-button__icon, .via-slds .slds-button--icon-more:focus .slds-button__icon {
+  fill: #0070d2; }
+
+.via-slds .slds-button--icon-more:active .slds-button__icon {
+  fill: #00396b; }
+
+.via-slds .slds-button--icon-more[disabled] {
+  cursor: default; }
+
+.via-slds .slds-button--icon-more[disabled] .slds-button__icon {
+  fill: #d8dde6; }
+
+.via-slds .slds-button--icon-container-more {
+  line-height: 1.875rem;
+  padding: 0 0.5rem;
+  vertical-align: middle; }
+
+.via-slds .slds-button--icon-inverse,
+.via-slds .slds-button--icon-border-inverse {
+  color: white; }
+
+.via-slds .slds-button--icon-inverse:hover, .via-slds .slds-button--icon-inverse:focus,
+.via-slds .slds-button--icon-border-inverse:hover,
+.via-slds .slds-button--icon-border-inverse:focus {
+  color: rgba(255, 255, 255, 0.75); }
+
+.via-slds .slds-button--icon-inverse:active,
+.via-slds .slds-button--icon-border-inverse:active {
+  color: rgba(255, 255, 255, 0.5); }
+
+.via-slds .slds-button--icon-inverse[disabled],
+.via-slds .slds-button--icon-border-inverse[disabled] {
+  color: rgba(255, 255, 255, 0.15); }
+
+.via-slds .slds-button--icon-error, .via-slds .slds-button--icon-error:hover, .via-slds .slds-button--icon-error:active, .via-slds .slds-button--icon-error:focus {
+  color: #c23934; }
+
+.via-slds .slds-button--icon-border-inverse[disabled] {
+  border-color: rgba(255, 255, 255, 0.15); }
+
+.via-slds .slds-button--icon-container.slds-is-selected,
+.via-slds .slds-button--icon-border.slds-is-selected {
+  background-color: #0070d2;
+  border: 1px solid #0070d2;
+  color: white; }
+
+.via-slds .slds-button--icon-container.slds-is-selected:link, .via-slds .slds-button--icon-container.slds-is-selected:visited, .via-slds .slds-button--icon-container.slds-is-selected:active,
+.via-slds .slds-button--icon-border.slds-is-selected:link,
+.via-slds .slds-button--icon-border.slds-is-selected:visited,
+.via-slds .slds-button--icon-border.slds-is-selected:active {
+  color: white; }
+
+.via-slds .slds-button--icon-container.slds-is-selected:hover, .via-slds .slds-button--icon-container.slds-is-selected:focus,
+.via-slds .slds-button--icon-border.slds-is-selected:hover,
+.via-slds .slds-button--icon-border.slds-is-selected:focus {
+  background-color: #005fb2;
+  color: white; }
+
+.via-slds .slds-button--icon-container.slds-is-selected:active,
+.via-slds .slds-button--icon-border.slds-is-selected:active {
+  background-color: #00396b; }
+
+.via-slds .slds-button--icon-container.slds-is-selected .slds-button__icon,
+.via-slds .slds-button--icon-border.slds-is-selected .slds-button__icon {
+  fill: white; }
+
+.via-slds .slds-button--icon-container.slds-is-selected:hover .slds-button__icon, .via-slds .slds-button--icon-container.slds-is-selected:focus .slds-button__icon,
+.via-slds .slds-button--icon-border.slds-is-selected:hover .slds-button__icon,
+.via-slds .slds-button--icon-border.slds-is-selected:focus .slds-button__icon {
+  fill: white; }
+
+.via-slds .slds-button--icon-small {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.125rem; }
+
+.via-slds .slds-button--icon-x-small {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 0.125rem;
+  line-height: 1; }
+
+.via-slds .slds-button--icon-x-small .slds-button__icon {
+  width: 0.75rem;
+  height: 0.75rem; }
+
+.via-slds .slds-button--icon-xx-small {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.125rem;
+  line-height: 1; }
+
+.via-slds .slds-button--icon-xx-small .slds-button__icon {
+  width: 0.5rem;
+  height: 0.5rem; }
+
+.via-slds .slds-button__icon {
+  width: 0.875rem;
+  height: 0.875rem;
+  fill: currentColor; }
+
+.via-slds .slds-button__icon--large {
+  width: 1.5rem;
+  height: 1.5rem; }
+
+.via-slds .slds-button__icon--small {
+  width: 0.75rem;
+  height: 0.75rem; }
+
+.via-slds .slds-button__icon--x-small {
+  width: 0.5rem;
+  height: 0.5rem; }
+
+.via-slds .slds-button__icon--hint {
+  fill: #9faab5; }
+
+.via-slds .slds-button__icon--inverse-hint {
+  fill: rgba(255, 255, 255, 0.5); }
+
+.via-slds .slds-hint-parent .slds-button--icon-border-inverse {
+  border-color: rgba(255, 255, 255, 0.5); }
+
+.via-slds .slds-hint-parent .slds-button--icon-border-inverse:focus {
+  border-color: rgba(255, 255, 255, 0.75); }
+
+.via-slds .slds-hint-parent:hover .slds-button--icon-border-inverse, .via-slds .slds-hint-parent:focus .slds-button--icon-border-inverse {
+  border-color: rgba(255, 255, 255, 0.75); }
+
+.via-slds .slds-hint-parent:hover .slds-button__icon--hint, .via-slds .slds-hint-parent:focus .slds-button__icon--hint {
+  fill: #54698d; }
+
+.via-slds .slds-hint-parent:hover .slds-button__icon--inverse-hint, .via-slds .slds-hint-parent:focus .slds-button__icon--inverse-hint {
+  fill: rgba(255, 255, 255, 0.75); }
+
+.via-slds .slds-icon_container,
+.via-slds .slds-icon__container {
+  display: inline-block;
+  border-radius: 0.25rem; }
+
+.via-slds .slds-icon_container--circle,
+.via-slds .slds-icon__container--circle {
+  padding: 0.5rem;
+  border-radius: 50%; }
+
+.via-slds .slds-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  fill: white; }
+
+.via-slds .slds-icon-action-change-owner {
+  background-color: #54698d; }
+
+.via-slds .slds-icon-action-share {
+  background-color: #54698d; }
+
+.via-slds .slds-icon-action-info {
+  background-color: #54698d; }
+
+.via-slds .slds-icon-action-upload {
+  background-color: #54698d; }
+
+.via-slds .slds-icon-action-change-record-type {
+  background-color: #54698d; }
+
+.via-slds .slds-icon-action-check {
+  background-color: #54698d; }
+
+.via-slds .slds-icon-action-download {
+  background-color: #54698d; }
+
+.via-slds .slds-icon-action-edit-relationship {
+  background-color: #1dccbf; }
+
+.via-slds .slds-icon-action-freeze-user {
+  background-color: #54698d; }
+
+.via-slds .slds-icon-action-manage-perm-sets {
+  background-color: #54698d; }
+
+.via-slds .slds-icon-action-password-unlock {
+  background-color: #54698d; }
+
+.via-slds .slds-icon-action-refresh {
+  background-color: #54698d; }
+
+.via-slds .slds-icon-action-remove {
+  background-color: #54698d; }
+
+.via-slds .slds-icon-action-reset-password {
+  background-color: #54698d; }
+
+.via-slds .slds-icon-action-user-activation {
+  background-color: #54698d; }
+
+.via-slds .slds-icon-action-add-contact {
+  background-color: #a094ed; }
+
+.via-slds .slds-icon-action-approval {
+  background-color: #00c6b7; }
+
+.via-slds .slds-icon-action-canvas {
+  background-color: #8199af; }
+
+.via-slds .slds-icon-action-goal {
+  background-color: #56aadf; }
+
+.via-slds .slds-icon-action-opportunity-competitor {
+  background-color: #fcb95b; }
+
+.via-slds .slds-icon-action-opportunity-line-item {
+  background-color: #fcb95b; }
+
+.via-slds .slds-icon-action-opportunity-team-member {
+  background-color: #fcb95b; }
+
+.via-slds .slds-icon-action-question-post-action {
+  background-color: #32af5c; }
+
+.via-slds .slds-icon-action-quote {
+  background-color: #88c651; }
+
+.via-slds .slds-icon-action-reject {
+  background-color: #00c6b7; }
+
+.via-slds .slds-icon-action-social-post {
+  background-color: #ea74a2; }
+
+.via-slds .slds-icon-action-fallback {
+  background-color: #9895ee; }
+
+.via-slds .slds-icon-action-edit {
+  background-color: #1dccbf; }
+
+.via-slds .slds-icon-action-delete {
+  background-color: #e6717c; }
+
+.via-slds .slds-icon-action-clone {
+  background-color: #6ca1e9; }
+
+.via-slds .slds-icon-action-follow {
+  background-color: #31b9f8; }
+
+.via-slds .slds-icon-action-following {
+  background-color: #7dcf64; }
+
+.via-slds .slds-icon-action-join-group {
+  background-color: #779ef2; }
+
+.via-slds .slds-icon-action-leave-group {
+  background-color: #f39e58; }
+
+.via-slds .slds-icon-action-edit-groups {
+  background-color: #34becd; }
+
+.via-slds .slds-icon-action-share-post {
+  background-color: #65cae4; }
+
+.via-slds .slds-icon-action-user {
+  background-color: #65cae4; }
+
+.via-slds .slds-icon-action-share-file {
+  background-color: #baac93; }
+
+.via-slds .slds-icon-action-new-task {
+  background-color: #4bc076; }
+
+.via-slds .slds-icon-action-new-contact {
+  background-color: #a094ed; }
+
+.via-slds .slds-icon-action-new-opportunity {
+  background-color: #fcb95b; }
+
+.via-slds .slds-icon-action-new-case {
+  background-color: #f2cf5b; }
+
+.via-slds .slds-icon-action-new-lead {
+  background-color: #f88962; }
+
+.via-slds .slds-icon-action-share-thanks {
+  background-color: #e9696e; }
+
+.via-slds .slds-icon-action-share-link {
+  background-color: #7a9ae6; }
+
+.via-slds .slds-icon-action-share-poll {
+  background-color: #699be1; }
+
+.via-slds .slds-icon-action-new-event {
+  background-color: #eb7092; }
+
+.via-slds .slds-icon-action-new-child-case {
+  background-color: #fa975c; }
+
+.via-slds .slds-icon-action-log-a-call {
+  background-color: #48c3cc; }
+
+.via-slds .slds-icon-action-new-note {
+  background-color: #e6d478; }
+
+.via-slds .slds-icon-action-new {
+  background-color: #33bce7; }
+
+.via-slds .slds-icon-action-filter {
+  background-color: #fd90b5; }
+
+.via-slds .slds-icon-action-sort {
+  background-color: #fab9a5; }
+
+.via-slds .slds-icon-action-description {
+  background-color: #7dc37d; }
+
+.via-slds .slds-icon-action-defer {
+  background-color: #ef7ead; }
+
+.via-slds .slds-icon-action-update {
+  background-color: #81b4d6; }
+
+.via-slds .slds-icon-action-log-this-event {
+  background-color: #eb7092; }
+
+.via-slds .slds-icon-action-email {
+  background-color: #95aec5; }
+
+.via-slds .slds-icon-action-dial-in {
+  background-color: #8b9ae3; }
+
+.via-slds .slds-icon-action-map {
+  background-color: #76c6ee; }
+
+.via-slds .slds-icon-action-call {
+  background-color: #1fcaa0; }
+
+.via-slds .slds-icon-action-google-news {
+  background-color: #f5675b; }
+
+.via-slds .slds-icon-action-web-link {
+  background-color: #56aadf; }
+
+.via-slds .slds-icon-action-submit-for-approval {
+  background-color: #50cc7a; }
+
+.via-slds .slds-icon-action-search {
+  background-color: #48adeb; }
+
+.via-slds .slds-icon-action-close {
+  background-color: #ef6e64; }
+
+.via-slds .slds-icon-action-back {
+  background-color: #0dc2d9; }
+
+.via-slds .slds-icon-action-office-365 {
+  background-color: #ff8041; }
+
+.via-slds .slds-icon-action-concur {
+  background-color: #4cc3c7; }
+
+.via-slds .slds-icon-action-dropbox {
+  background-color: #52aef9; }
+
+.via-slds .slds-icon-action-evernote {
+  background-color: #86c86f; }
+
+.via-slds .slds-icon-action-docusign {
+  background-color: #5080db; }
+
+.via-slds .slds-icon-action-more {
+  background-color: #62b7ed; }
+
+.via-slds .slds-icon-action-notebook {
+  background-color: #e6d478; }
+
+.via-slds .slds-icon-action-new-notebook {
+  background-color: #e6d478; }
+
+.via-slds .slds-icon-action-preview {
+  background-color: #7f8de1; }
+
+.via-slds .slds-icon-action-priority {
+  background-color: #fbb439; }
+
+.via-slds .slds-icon-action-default-custom-object {
+  background-color: #8199af; }
+
+.via-slds .slds-icon-action-new-custom-object {
+  background-color: #a7d44d; }
+
+.via-slds .slds-icon-action-lead-convert {
+  background-color: #f88962; }
+
+.via-slds .slds-icon-action-new-account {
+  background-color: #7f8de1; }
+
+.via-slds .slds-icon-action-new-person-account {
+  background-color: #7f8de1; }
+
+.via-slds .slds-icon-action-new-campaign {
+  background-color: #f49756; }
+
+.via-slds .slds-icon-action-new-group {
+  background-color: #83b6ff; }
+
+.via-slds .slds-icon-action-update-status {
+  background-color: #1ec7be; }
+
+.via-slds .slds-icon-action-new-custom-1 {
+  background-color: #ff7b84; }
+
+.via-slds .slds-icon-action-new-custom-2 {
+  background-color: #cfd05c; }
+
+.via-slds .slds-icon-action-new-custom-3 {
+  background-color: #ecb46c; }
+
+.via-slds .slds-icon-action-new-custom-4 {
+  background-color: #e1d951; }
+
+.via-slds .slds-icon-action-new-custom-5 {
+  background-color: #9fdb66; }
+
+.via-slds .slds-icon-action-new-custom-6 {
+  background-color: #54c473; }
+
+.via-slds .slds-icon-action-new-custom-7 {
+  background-color: #6a89e5; }
+
+.via-slds .slds-icon-action-new-custom-8 {
+  background-color: #50ceb9; }
+
+.via-slds .slds-icon-action-new-custom-9 {
+  background-color: #6b9ee2; }
+
+.via-slds .slds-icon-action-new-custom-10 {
+  background-color: #6488e3; }
+
+.via-slds .slds-icon-action-new-custom-11 {
+  background-color: #8784ea; }
+
+.via-slds .slds-icon-action-new-custom-12 {
+  background-color: #dc71d1; }
+
+.via-slds .slds-icon-action-new-custom-13 {
+  background-color: #df6184; }
+
+.via-slds .slds-icon-action-new-custom-14 {
+  background-color: #3cc2b3; }
+
+.via-slds .slds-icon-action-new-custom-15 {
+  background-color: #f77e75; }
+
+.via-slds .slds-icon-action-new-custom-16 {
+  background-color: #e9af67; }
+
+.via-slds .slds-icon-action-new-custom-17 {
+  background-color: #acd360; }
+
+.via-slds .slds-icon-action-new-custom-18 {
+  background-color: #4dca76; }
+
+.via-slds .slds-icon-action-new-custom-19 {
+  background-color: #3abeb1; }
+
+.via-slds .slds-icon-action-new-custom-20 {
+  background-color: #48c7c8; }
+
+.via-slds .slds-icon-action-new-custom-21 {
+  background-color: #8a7aed; }
+
+.via-slds .slds-icon-action-new-custom-22 {
+  background-color: #8b85f9; }
+
+.via-slds .slds-icon-action-new-custom-23 {
+  background-color: #b070e6; }
+
+.via-slds .slds-icon-action-new-custom-24 {
+  background-color: #e56798; }
+
+.via-slds .slds-icon-action-new-custom-25 {
+  background-color: #e46fbe; }
+
+.via-slds .slds-icon-action-new-custom-26 {
+  background-color: #7698f0; }
+
+.via-slds .slds-icon-action-new-custom-27 {
+  background-color: #5ab0d2; }
+
+.via-slds .slds-icon-action-new-custom-28 {
+  background-color: #89c059; }
+
+.via-slds .slds-icon-action-new-custom-29 {
+  background-color: #bdd25f; }
+
+.via-slds .slds-icon-action-new-custom-30 {
+  background-color: #f59f71; }
+
+.via-slds .slds-icon-action-new-custom-31 {
+  background-color: #eb687f; }
+
+.via-slds .slds-icon-action-new-custom-32 {
+  background-color: #38c393; }
+
+.via-slds .slds-icon-action-new-custom-33 {
+  background-color: #97cf5d; }
+
+.via-slds .slds-icon-action-new-custom-34 {
+  background-color: #d58a6a; }
+
+.via-slds .slds-icon-action-new-custom-35 {
+  background-color: #e9637e; }
+
+.via-slds .slds-icon-action-new-custom-36 {
+  background-color: #d472d4; }
+
+.via-slds .slds-icon-action-new-custom-37 {
+  background-color: #8c89f2; }
+
+.via-slds .slds-icon-action-new-custom-38 {
+  background-color: #53b6d7; }
+
+.via-slds .slds-icon-action-new-custom-39 {
+  background-color: #4fbe75; }
+
+.via-slds .slds-icon-action-new-custom-40 {
+  background-color: #83c75e; }
+
+.via-slds .slds-icon-action-new-custom-41 {
+  background-color: #43b5b5; }
+
+.via-slds .slds-icon-action-new-custom-42 {
+  background-color: #cfd05b; }
+
+.via-slds .slds-icon-action-new-custom-43 {
+  background-color: #7f93f9; }
+
+.via-slds .slds-icon-action-new-custom-44 {
+  background-color: #c8ca58; }
+
+.via-slds .slds-icon-action-new-custom-45 {
+  background-color: #d95879; }
+
+.via-slds .slds-icon-action-new-custom-46 {
+  background-color: #67a5e7; }
+
+.via-slds .slds-icon-action-new-custom-47 {
+  background-color: #5fcc64; }
+
+.via-slds .slds-icon-action-new-custom-48 {
+  background-color: #ef697f; }
+
+.via-slds .slds-icon-action-new-custom-49 {
+  background-color: #e25c80; }
+
+.via-slds .slds-icon-action-new-custom-50 {
+  background-color: #49bcd3; }
+
+.via-slds .slds-icon-action-new-custom-51 {
+  background-color: #d8c760; }
+
+.via-slds .slds-icon-action-new-custom-52 {
+  background-color: #ee8e6f; }
+
+.via-slds .slds-icon-action-new-custom-53 {
+  background-color: #f36e83; }
+
+.via-slds .slds-icon-action-new-custom-54 {
+  background-color: #ea70b1; }
+
+.via-slds .slds-icon-action-new-custom-55 {
+  background-color: #d66ee0; }
+
+.via-slds .slds-icon-action-new-custom-56 {
+  background-color: #718deb; }
+
+.via-slds .slds-icon-action-new-custom-57 {
+  background-color: #5a9cdd; }
+
+.via-slds .slds-icon-action-new-custom-58 {
+  background-color: #34b59d; }
+
+.via-slds .slds-icon-action-new-custom-59 {
+  background-color: #e3d067; }
+
+.via-slds .slds-icon-action-new-custom-60 {
+  background-color: #bf5a88; }
+
+.via-slds .slds-icon-action-new-custom-61 {
+  background-color: #f57376; }
+
+.via-slds .slds-icon-action-new-custom-62 {
+  background-color: #6b92dc; }
+
+.via-slds .slds-icon-action-new-custom-63 {
+  background-color: #7ccf60; }
+
+.via-slds .slds-icon-action-new-custom-64 {
+  background-color: #618fd8; }
+
+.via-slds .slds-icon-action-new-custom-65 {
+  background-color: #f279ab; }
+
+.via-slds .slds-icon-action-new-custom-66 {
+  background-color: #d8be5f; }
+
+.via-slds .slds-icon-action-new-custom-67 {
+  background-color: #f87d76; }
+
+.via-slds .slds-icon-action-new-custom-68 {
+  background-color: #f26979; }
+
+.via-slds .slds-icon-action-new-custom-69 {
+  background-color: #ed6387; }
+
+.via-slds .slds-icon-action-new-custom-70 {
+  background-color: #e769b4; }
+
+.via-slds .slds-icon-action-new-custom-71 {
+  background-color: #e36ee3; }
+
+.via-slds .slds-icon-action-new-custom-72 {
+  background-color: #8d9bfb; }
+
+.via-slds .slds-icon-action-new-custom-73 {
+  background-color: #679ef0; }
+
+.via-slds .slds-icon-action-new-custom-74 {
+  background-color: #41c8a0; }
+
+.via-slds .slds-icon-action-new-custom-75 {
+  background-color: #cd9f65; }
+
+.via-slds .slds-icon-action-new-custom-76 {
+  background-color: #db6d7a; }
+
+.via-slds .slds-icon-action-new-custom-77 {
+  background-color: #b55d5b; }
+
+.via-slds .slds-icon-action-new-custom-78 {
+  background-color: #5a95dd; }
+
+.via-slds .slds-icon-action-new-custom-79 {
+  background-color: #8ed363; }
+
+.via-slds .slds-icon-action-new-custom-80 {
+  background-color: #659ad5; }
+
+.via-slds .slds-icon-action-new-custom-81 {
+  background-color: #da627f; }
+
+.via-slds .slds-icon-action-new-custom-82 {
+  background-color: #d15b97; }
+
+.via-slds .slds-icon-action-new-custom-83 {
+  background-color: #e7806f; }
+
+.via-slds .slds-icon-action-new-custom-84 {
+  background-color: #f6707b; }
+
+.via-slds .slds-icon-action-new-custom-85 {
+  background-color: #f26891; }
+
+.via-slds .slds-icon-action-new-custom-86 {
+  background-color: #e260ab; }
+
+.via-slds .slds-icon-action-new-custom-87 {
+  background-color: #d876e5; }
+
+.via-slds .slds-icon-action-new-custom-88 {
+  background-color: #996fe6; }
+
+.via-slds .slds-icon-action-new-custom-89 {
+  background-color: #3e99be; }
+
+.via-slds .slds-icon-action-new-custom-90 {
+  background-color: #22a48a; }
+
+.via-slds .slds-icon-action-new-custom-91 {
+  background-color: #bf7b66; }
+
+.via-slds .slds-icon-action-new-custom-92 {
+  background-color: #517e82; }
+
+.via-slds .slds-icon-action-new-custom-93 {
+  background-color: #904d4c; }
+
+.via-slds .slds-icon-action-new-custom-94 {
+  background-color: #439cba; }
+
+.via-slds .slds-icon-action-new-custom-95 {
+  background-color: #8bcf6a; }
+
+.via-slds .slds-icon-action-new-custom-96 {
+  background-color: #6d9de3; }
+
+.via-slds .slds-icon-action-new-custom-97 {
+  background-color: #dd6085; }
+
+.via-slds .slds-icon-action-new-custom-98 {
+  background-color: #e1be5c; }
+
+.via-slds .slds-icon-action-new-custom-99 {
+  background-color: #f0856e; }
+
+.via-slds .slds-icon-action-new-custom-100 {
+  background-color: #e15d76; }
+
+.via-slds .slds-icon-action-apex {
+  background-color: #696e71; }
+
+.via-slds .slds-icon-action-flow {
+  background-color: #0079bc; }
+
+.via-slds .slds-icon-action-announcement {
+  background-color: #fe8f60; }
+
+.via-slds .slds-icon-action-record {
+  background-color: #7dc37d; }
+
+.via-slds .slds-icon-action-log-event {
+  background-color: #6ca1e9; }
+
+.via-slds .slds-icon-action-add-relationship {
+  background-color: #62b7ed; }
+
+.via-slds .slds-icon-action-remove-relationship {
+  background-color: #ef6e64; }
+
+.via-slds .slds-icon-action-view-relationship {
+  background-color: #3c97dd; }
+
+.via-slds .slds-icon-custom-custom1,
+.via-slds .slds-icon-custom-1 {
+  background-color: #ff7b84;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom2,
+.via-slds .slds-icon-custom-2 {
+  background-color: #cfd05c;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom3,
+.via-slds .slds-icon-custom-3 {
+  background-color: #ecb46c;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom4,
+.via-slds .slds-icon-custom-4 {
+  background-color: #e1d951;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom5,
+.via-slds .slds-icon-custom-5 {
+  background-color: #9fdb66;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom6,
+.via-slds .slds-icon-custom-6 {
+  background-color: #54c473;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom7,
+.via-slds .slds-icon-custom-7 {
+  background-color: #6a89e5;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom8,
+.via-slds .slds-icon-custom-8 {
+  background-color: #50ceb9;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom9,
+.via-slds .slds-icon-custom-9 {
+  background-color: #6b9ee2;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom10,
+.via-slds .slds-icon-custom-10 {
+  background-color: #6488e3;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom11,
+.via-slds .slds-icon-custom-11 {
+  background-color: #8784ea;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom12,
+.via-slds .slds-icon-custom-12 {
+  background-color: #dc71d1;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom13,
+.via-slds .slds-icon-custom-13 {
+  background-color: #df6184;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom14,
+.via-slds .slds-icon-custom-14 {
+  background-color: #3cc2b3;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom15,
+.via-slds .slds-icon-custom-15 {
+  background-color: #f77e75;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom16,
+.via-slds .slds-icon-custom-16 {
+  background-color: #e9af67;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom17,
+.via-slds .slds-icon-custom-17 {
+  background-color: #acd360;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom18,
+.via-slds .slds-icon-custom-18 {
+  background-color: #4dca76;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom19,
+.via-slds .slds-icon-custom-19 {
+  background-color: #3abeb1;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom20,
+.via-slds .slds-icon-custom-20 {
+  background-color: #48c7c8;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom21,
+.via-slds .slds-icon-custom-21 {
+  background-color: #8a7aed;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom22,
+.via-slds .slds-icon-custom-22 {
+  background-color: #8b85f9;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom23,
+.via-slds .slds-icon-custom-23 {
+  background-color: #b070e6;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom24,
+.via-slds .slds-icon-custom-24 {
+  background-color: #e56798;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom25,
+.via-slds .slds-icon-custom-25 {
+  background-color: #e46fbe;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom26,
+.via-slds .slds-icon-custom-26 {
+  background-color: #7698f0;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom27,
+.via-slds .slds-icon-custom-27 {
+  background-color: #5ab0d2;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom28,
+.via-slds .slds-icon-custom-28 {
+  background-color: #89c059;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom29,
+.via-slds .slds-icon-custom-29 {
+  background-color: #bdd25f;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom30,
+.via-slds .slds-icon-custom-30 {
+  background-color: #f59f71;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom31,
+.via-slds .slds-icon-custom-31 {
+  background-color: #eb687f;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom32,
+.via-slds .slds-icon-custom-32 {
+  background-color: #38c393;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom33,
+.via-slds .slds-icon-custom-33 {
+  background-color: #97cf5d;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom34,
+.via-slds .slds-icon-custom-34 {
+  background-color: #d58a6a;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom35,
+.via-slds .slds-icon-custom-35 {
+  background-color: #e9637e;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom36,
+.via-slds .slds-icon-custom-36 {
+  background-color: #d472d4;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom37,
+.via-slds .slds-icon-custom-37 {
+  background-color: #8c89f2;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom38,
+.via-slds .slds-icon-custom-38 {
+  background-color: #53b6d7;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom39,
+.via-slds .slds-icon-custom-39 {
+  background-color: #4fbe75;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom40,
+.via-slds .slds-icon-custom-40 {
+  background-color: #83c75e;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom41,
+.via-slds .slds-icon-custom-41 {
+  background-color: #43b5b5;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom42,
+.via-slds .slds-icon-custom-42 {
+  background-color: #cfd05b;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom43,
+.via-slds .slds-icon-custom-43 {
+  background-color: #7f93f9;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom44,
+.via-slds .slds-icon-custom-44 {
+  background-color: #c8ca58;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom45,
+.via-slds .slds-icon-custom-45 {
+  background-color: #d95879;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom46,
+.via-slds .slds-icon-custom-46 {
+  background-color: #67a5e7;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom47,
+.via-slds .slds-icon-custom-47 {
+  background-color: #5fcc64;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom48,
+.via-slds .slds-icon-custom-48 {
+  background-color: #ef697f;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom49,
+.via-slds .slds-icon-custom-49 {
+  background-color: #e25c80;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom50,
+.via-slds .slds-icon-custom-50 {
+  background-color: #49bcd3;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom51,
+.via-slds .slds-icon-custom-51 {
+  background-color: #d8c760;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom52,
+.via-slds .slds-icon-custom-52 {
+  background-color: #ee8e6f;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom53,
+.via-slds .slds-icon-custom-53 {
+  background-color: #f36e83;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom54,
+.via-slds .slds-icon-custom-54 {
+  background-color: #ea70b1;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom55,
+.via-slds .slds-icon-custom-55 {
+  background-color: #d66ee0;
+  color: white; }
+
+.via-slds .slds-icon-custom-custom56,
+.via-slds .slds-icon-custom-56 {
+  background-color: #718deb;
+  color: white; }
+
+.via-slds .sld
